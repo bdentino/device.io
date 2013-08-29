@@ -1,7 +1,9 @@
 {
 	"name" : "device.io",
+	"repo" : "bdentino/device.io",
 	"version" : "0.0.1",
-	"description" : "simple interface for device definitions/bindings",
+	"keywords" : ["websockets", "mobile", "gesture", "hci", "device"],
+	"description" : "simple interface for device definitions and groupings",
 	"main" : "index.js",
 	"scripts" : [ 
 		"index.js",
@@ -11,5 +13,6 @@
 	],
 	"dependencies" : {
 		"matthewmueller/io" : "*"
-   }
+   },
+   "license" : "MIT"
 }
