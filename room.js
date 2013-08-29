@@ -36,7 +36,7 @@ Room.prototype.broadcast = function(eventType, eventData) {
 Room.prototype.deviceConnected = function(device) {
 	this.devices[device.deviceId] = new DeviceProxy(this, device);
 	for (var callback in this.deviceConnectCallbacks) {
-		callback(device);
+		callback(this.devices[device.deviceId]);
 	}
 	console.log('device connected');
 };

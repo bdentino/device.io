@@ -20,8 +20,8 @@ Device.prototype.joinRoom = function(room) {
 		console.log('Warning: Attempted to add device to room it already belongs to');
 		return;
 	}
-	this.rooms[room] = room.broadcastChannel.channel(this.deviceId);
-	this.rooms[room].emit('deviceConnect', {'deviceId' : this.deviceId});
+	this.roomChannels[room] = room.broadcastChannel.channel(this.deviceId);
+	this.roomChannels[room].emit('deviceConnect', {'deviceId' : this.deviceId});
 };
 
 Device.prototype.onRotation = function(rotationEvent) {
