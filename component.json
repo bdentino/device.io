@@ -1,0 +1,15 @@
+{
+	"name" : "device.io",
+	"version" : "0.0.1",
+	"description" : "simple interface for device definitions/bindings",
+	"main" : "index.js",
+	"scripts" : [ 
+		"index.js",
+		"device.js",
+		"room.js",
+		"deviceProxy.js"
+	],
+	"dependencies" : {
+		"matthewmueller/io" : "*"
+   }
+}
